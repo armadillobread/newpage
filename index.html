@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="external.js"></script>
+    <title> Play Chess</title>
+
+    <style>
+        h1{
+            font-size:60px;
+            padding-top: 20px;
+            color: #ffffff;
+        }
+        .board{
+            padding-top: 70px;
+        }
+        body{
+            background-color: rgb(107, 134, 141);
+        }
+        div{
+            display:inline-block;
+        }
+        .d1{
+            height:80px;
+            width:80px;
+            background-color:black;
+        }
+        .d2{
+            height:80px;
+            width:80px;
+            background-color:#ffffff;
+        }
+        .n1{
+            display: inline;
+            float:right;
+            padding-right: 20px;
+        
+        }
+        .m1{
+            background-color: black;
+            border-radius: 6px;
+            height: 30px;
+            padding-top: 8px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size:17px;
+            padding: 30px;
+        }
+        .n2{
+            display: block;
+            
+        }
+        .n2 a{
+            padding: 10px;
+            display: block;
+        }
+        .m2{
+            display:block;
+            background-color: black;
+            border-radius: 6px;
+            width:100px;
+            margin: 5px;
+            
+        }
+        
+        
+
+    </style>
+
+</head>
+<body>
+    <nav class="n1">
+        <div class="m1"><a href="#">Home</a></div>
+        <div class="m1"><a href="#">Careers</a></div>
+        <div class="m1"><a href="#">About Us</a></div>
+        <div class="m1"><a href="#">Contact</a></div>
+    </nav>
+
+    <nav class="n2">
+        <div class="m2"><a href="#">Home</a></div>
+        <div class="m2"><a href="#">Careers</a></div>
+        <div class="m2"><a href="#">About Us</a></div>
+        <div class="m2"><a href="#">Contact</a></div>
+
+    </nav>
+    
+    <center><h1>ChessBoard!</h1></center>
+    <center>
+    <div class="board">
+        <div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+        <br>
+        <div>
+            
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+        </div>
+        <br>
+        <div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+        <br>
+        <div>
+            
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+        </div>
+        <br>
+        <div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+        <br>
+        <div>
+            
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+        </div>
+        <br>
+        <div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+        <br>
+        <div>
+            
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d1"></div>
+        </div>
+        <br>
+    </div>
+</center>
+
+
+<center>
+<form action="" method="post">
+
+    <input type="submit" value="Click" onclick="alert('Welcome to the board!')"/>
+
+</form>
+</center>
+
+<hr/>
+
+<!-- <center>
+<form action="" method="post">
+    <input type="Submit" value="Submit" onClick="msg()"/>
+</form>
+</center> -->
+
+<hr/>
+<!-- 
+    <center>
+    <form action="" method="post">
+        <input type="Submit" value="Submit" onClick="new_msg()"/>
+    </form>
+    </center> -->
+
+<br><br><br>
+
+<form id ="quizeform" action="" method="post">
+        <h2>Complete the following Quize!</h2>
+        <strong>Q1. Who sang the title song for the latest Bond film, No Time to Die?</strong>
+        <br>
+        <label>
+            Adele
+            <input name="q1" id="1op1" type="radio" value="Adele">
+        </label>
+        <label>
+            Billie Eilish
+            <input name="q1" id="1op2" type="radio" value="Billie Eilish">
+        </label>
+        <label>
+            Sam Smith
+            <input name="q1" id="1op3" type="radio" value="Sam Smith">
+        </label>
+        <br><br><br>
+
+
+        <strong>Q2. Which flies a green, white, and orange (in that order) tricolor flag? </strong>
+        <br>
+        <label>
+            Ireland
+            <input name="q2" id="2op1" type="radio" value="Ireland">
+        </label>
+        <label>
+            Ivory Coast
+            <input name="q2" id="2op2"  type="radio" value="Ivory Coast">
+        </label>
+        <label>
+            ItalyItaly
+            <input name="q2" id="2op3"  type="radio" value="Italy">
+        </label>
+        <br><br><br>
+
+
+
+        <strong>Q3. What company makes the Xperia model of smartphone?</strong>
+        <br>
+        <label>
+            Samsung
+            <input name="q3" id="3op1"  type="radio" value="Samsung">
+        </label>
+        <label>
+            Sony
+            <input name="q3" id="3op2"  type="radio" value="Sony">
+        </label>
+        <label>
+            Nokia
+            <input name="q3" id="3op3"  type="radio" value="Nokia">
+        </label>
+        <br><br><br>
+
+
+
+        <strong>Q4. Which city is home to the Brandenburg Gate?</strong>
+        <br>
+        <label>
+            Vienna
+            <input name="q4" id="4op1"  type="radio" value="Vienna">
+        </label>
+        <label>
+            Zurich
+            <input name="q4" id="4op2"  type="radio" value="Zurich">
+        </label>
+        <label>
+            Berlin
+            <input name="q4" id="4op3"  type="radio" value="Berlin">
+        </label>
+        <br><br><br>
+
+
+
+        <strong>Q5. Which of the following is NOT a fruit?</strong>
+        <br>
+        <label>
+            Rhubarb
+            <input name="q5" id="5op1"  type="radio" value="Rhubarb">
+        </label>
+        <label>
+            Tomatoes
+            <input name="q5" id="5op2"  type="radio" value="Tomatoes">
+        </label>
+        <label>
+            Avocados
+            <input name="q5" id="5op3"  type="radio" value="Avocados">
+        </label>
+        <br><br><br>
+
+
+        <strong>Q6. Where was the first example of paper money used?</strong>
+        <br>
+        <label>
+            China
+            <input name="q6" id="6op1"  type="radio" value="China">
+        </label>
+        <label>
+            Turkey
+            <input name="q6" id="6op2"  type="radio" value="Turkey">
+        </label>
+        <label>
+            Greece
+            <input name="q6" id="6op3"  type="radio" value="Greece">
+        </label>
+        <br><br><br>
+
+
+        <strong>Q7. Who is generally considered the inventor of the motor car?</strong>
+        <br>
+        <label>
+            Henry Ford
+            <input name="q7" id="7op1"  type="radio" value="Henry Ford">
+        </label>
+        <label>
+            Karl Benz
+            <input name="q7" id="7op2"  type="radio" value="Karl Benz">
+        </label>
+        <label>
+            Henry M. Leland
+            <input name="q7" id="7op3"  type="radio" value="Henry M. Leland">
+        </label>
+        <br><br><br>
+
+
+
+        <strong>Q8. If you were looking at Iguazu Falls, on what continent would you be?</strong>
+        <br>
+        <label>
+            Asia
+            <input name="q8" id="8op1"  type="radio" value="Asia">
+        </label>
+        <label>
+            Africa
+            <input name="q8" id="8op2"  type="radio" value="Africa">
+        </label>
+        <label>
+            South America
+            <input name="q8" id="8op3"  type="radio" value="South America">
+        </label>
+        <br><br><br>
+
+
+        <strong>Q9. What number was the Apollo mission that successfully put a man on the moon for the first time in human history? </strong>
+        <br>
+        <label>
+            Apollo 11
+            <input name="q9" id="9op1"  type="radio" value="Apollo 11">
+        </label>
+        <label>
+            Apollo 12
+            <input name="q9" id="9op2"  type="radio" value="Apollo 12">
+        </label>
+        <label>
+            Apollo 13
+            <input name="q9" id="9op3"  type="radio" value="Apollo 13">
+        </label>
+        <br><br><br>
+
+
+
+        <strong>Q10. Which Game of Thrones character is known as the Young Wolf?</strong>
+        <br>
+        <label>
+            Robb Stark
+            <input name="q9" id="10op1"  type="radio" value="Robb Stark">
+        </label>
+        <label>
+            Arya Stark
+            <input name="q9" id="10op2"  type="radio" value="Arya Stark">
+        </label>
+        <label>
+            Sansa Stark
+            <input name="q9" id="10op3"  type="radio" value="Sansa Stark">
+        </label>
+        <br><br><br>
+
+        <input type="submit" value="Submit" onClick="quize_eval()">
+
+</form>
+
+</body>
+</html>
+
